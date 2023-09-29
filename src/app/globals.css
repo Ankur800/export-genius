@@ -80,6 +80,13 @@ body {
 		url('../../public/guides.png');
 }
 
+.careers-div {
+	background: url('../../public/circle.svg'), url('../../public/circle.svg');
+	background-repeat: no-repeat;
+	background-position: 26% 40%, -20% 150%;
+	background-size: 400px 400px;
+}
+
 @media only screen and (max-width: 720px) {
 	.top-div {
 		background-image: linear-gradient(
@@ -115,5 +122,11 @@ body {
 				rgba(0, 0, 0, 0)
 			),
 			url('../../public/guides-mobile.png');
+	}
+	.careers-div {
+		background: url('../../public/circle.svg');
+		background-repeat: no-repeat;
+		background-position: -45% 92%;
+		background-size: 320px 320px;
 	}
 }

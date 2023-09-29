@@ -138,6 +138,32 @@ const Home = () => {
 					aliqua.
 				</p>
 			</div>
+			<div className='block lg:flex mt-8 careers-div'>
+				<div className='block lg:hidden w-full'>
+					<img src='./careers.png' alt='careers-img' width='100%' />
+				</div>
+				<div className='w-full lg:w-1/2 px-4 lg:px-24 py-16 lg:py-60 '>
+					<h4 className='font-Oswald font-semibold text-base lg:text-xl text-main tracking-wider text-center lg:text-left'>
+						CAREERS
+					</h4>
+					<h2 className='font-Montserrat-normal font-semibold text-3xl lg:text-5xl mt-4 lg:mt-8 text-center lg:text-left'>
+						Careers at Olvera
+					</h2>
+					<p className='font-plus-jakarta font-normal text-lg text-fade lg:text-normal pr-8 pl-8 lg:pl-0 lg:pr-10 mt-4 lg:mt-8 text-center lg:text-left'>
+						Navigate change, develop on-demand skills. Your
+						turnaround journey starts with Olvera.
+					</p>
+					<div className='flex justify-center lg:justify-start'>
+						<Button
+							className='mt-12 bg-pink w-40 h-12 rounded-3xl font-plus-jakarta font-semibold text-lg'
+							text='Search Careers'
+						/>
+					</div>
+				</div>
+				<div className='hidden lg:block w-1/2'>
+					<img src='./careers.png' alt='careers-img' width='100%' />
+				</div>
+			</div>
 		</div>
 	);
 };

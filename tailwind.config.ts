@@ -21,10 +21,12 @@ const config: Config = {
 				main: '#C2278E',
 				fade: '#6E6E6E',
 				midnight: '#2d2d2d',
+				normal: '#3F3E3E',
 			},
 			backgroundColor: {
 				primary: '#C2278E',
 				secondary: '#FFFFFF',
+				pink: '#FF74D0',
 			},
 			fontFamily: {
 				Archivo: ['Archivo', ...defaultTheme.fontFamily.sans],
