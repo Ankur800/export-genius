@@ -2,26 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+	color: rgb(var(--foreground-rgb));
+	background: #ffffff;
+}
+
+.navbar .nav-menu:hover::after {
+	content: '';
+	position: absolute;
+	width: 35px;
+	height: 2px;
+	background-color: #c2278e;
+}
+
+.navbar .active::after {
+	content: '';
+	position: absolute;
+	width: 35px;
+	height: 2px;
+	background-color: #c2278e;
+}
+
+.top-div {
+	background-size: cover;
+	background-image: linear-gradient(
+			to right,
+			rgba(0, 0, 0, 0.8),
+			rgba(0, 0, 0, 0)
+		),
+		url('../../public/top-image.png');
+	height: 700px;
+}
+
+.top-div p {
+	font-size: 72px;
+}
+
+.tilt-div {
+	height: 600px;
+	background-color: #c2278e;
+	background-image: url('../../public/tilt-bg.svg');
+	background-size: cover;
+	background-position: center;
+}
+
+.data-div {
+	background: url('../../public/circle.svg');
+	background-repeat: no-repeat;
+	background-position: 40% 40%;
+	background-size: 400px 400px;
+}
+
+.line-height-big {
+	line-height: 3.5rem;
 }
