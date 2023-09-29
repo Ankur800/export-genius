@@ -47,12 +47,73 @@ body {
 }
 
 .data-div {
-	background: url('../../public/circle.svg');
+	background: url('../../public/circle.svg'), url('../../public/circle.svg');
 	background-repeat: no-repeat;
-	background-position: 40% 40%;
+	background-position: 35% 45%, -20% 110%;
 	background-size: 400px 400px;
 }
 
 .line-height-big {
 	line-height: 3.5rem;
+}
+
+.progress-border {
+	border-bottom: 1px solid #bcbcbc;
+}
+
+.progress-border::after {
+	content: '';
+	position: absolute;
+	width: 30px;
+	height: 2px;
+	background-color: #000000;
+}
+
+.guides {
+	height: 630px;
+	background-size: cover;
+	background-image: linear-gradient(
+			to right,
+			rgba(0, 0, 0, 0.8),
+			rgba(0, 0, 0, 0)
+		),
+		url('../../public/guides.png');
+}
+
+@media only screen and (max-width: 720px) {
+	.top-div {
+		background-image: linear-gradient(
+				to right,
+				rgba(0, 0, 0, 0.8),
+				rgba(0, 0, 0, 0)
+			),
+			url('../../public/top-image-mobile.png');
+		height: 550px;
+	}
+	.top-div p {
+		font-size: 42px;
+	}
+	.line-height-big {
+		line-height: 3rem;
+	}
+	.tilt-div {
+		height: 800px;
+		background-image: url('../../public/tilt-mobile.svg');
+	}
+	.data-div {
+		background: url('../../public/circle.svg');
+		background-repeat: no-repeat;
+		background-position: -120% 32%;
+		background-size: 320px 320px;
+	}
+	.guides {
+		height: 530px;
+		background-size: cover;
+		background-image: linear-gradient(
+				to right,
+				rgba(0, 0, 0, 0.8),
+				rgba(0, 0, 0, 0)
+			),
+			url('../../public/guides-mobile.png');
+	}
 }
